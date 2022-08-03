@@ -1,0 +1,35 @@
+.article {
+    display: flex;
+    justify-content: right;
+    margin-top: .5rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.title {
+    font-weight: 800;
+    line-height: 1.2em;
+    margin: 0;
+}
+.description {
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(0, 0%, 65%);
+    margin: 0;
+}
+.deskImg {
+    display: flex;
+    align-self: center;
+    width: 50%;
+}
+.get-button {
+    display: flex;
+    align-self: flex-start;
+    margin-top: .7rem;
+    width: 10em;
+    padding: 1em;
+    font-size: .5em;
+    font-weight: 900;
+}
