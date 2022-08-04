@@ -1,7 +1,8 @@
 .article {
     display: flex;
     justify-content: right;
-    margin-top: .5rem;
+    margin: .5rem 0 5rem 0;
+
 }
 .text {
     display: flex;
