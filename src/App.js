@@ -1,16 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Nav from "./components/nav/Nav";
 import Article from "./components/article/Article";
 import AdvancedStatistics from "./components/advanced-statistics/Advanced-Statistics";
+import Login from "./components/login/Login";
 
 
 
 function App() {
-    const {route ,setRoute} = useState('home');
   return (
     <div>
-        <Nav isLogin ={route} />
+        <Login />
+        <Nav />
         <Article />
         <AdvancedStatistics />
     </div>
