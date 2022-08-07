@@ -23,7 +23,7 @@ function Login () {
                                         type="email"
                                         autoComplete="email"
                                         required
-                                        className="text-sm appearance-none rounded-none relative block w-full px-3 py-1 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10"
+                                        className="text-sm appearance-none rounded-none relative block w-full px-3 py-1 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-the-blue-focused focus:border-the-blue-focused focus:z-10"
                                         placeholder="Email address"
                                     />
                                 </div>
@@ -37,7 +37,7 @@ function Login () {
                                         type="password"
                                         autoComplete="current-password"
                                         required
-                                        className="text-sm appearance-none rounded-none relative block w-full px-3 py-1 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10"
+                                        className="text-sm appearance-none rounded-none relative block w-full px-3 py-1 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-the-blue-focused focus:border-the-blue-focused focus:z-10"
                                         placeholder="Password"
                                     />
                                 </div>
@@ -49,7 +49,7 @@ function Login () {
                                         id="remember-me"
                                         name="remember-me"
                                         type="checkbox"
-                                        className="h-3 w-3 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                                        className="h-3 w-3 text-the-blue-focused focus:ring-the-blue-focused border-gray-300 rounded"
                                     />
                                     <label htmlFor="remember-me" className="ml-1 block small-font text-gray-900">
                                         Remember me
@@ -57,7 +57,7 @@ function Login () {
                                 </div>
 
                                 <div className="text-sm">
-                                    <p className="small-font font-medium ml-4 text-indigo-600 hover:text-indigo-500 cursor-pointer">
+                                    <p className="small-font font-medium ml-4 text-the-blue hover:text-the-blue-hover cursor-pointer">
                                         Forgot your password?
                                     </p>
                                 </div>
@@ -66,7 +66,7 @@ function Login () {
                             <div>
                                 <button
                                     type="submit"
-                                    className="group relative w-full flex justify-center py-1 px-3 border border-transparent medium-font font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    className="group relative w-full flex justify-center py-1 px-3 border border-transparent medium-font font-medium rounded-md text-white bg-the-blue hover:bg-the-blue-focused focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-the-blue-focused"
                                 >
                                     Sign in
                                 </button>

@@ -10,3 +10,9 @@
 .top {
     top: 20%;
 }
+.color {
+    color: hsl(180, 66%, 50%);
+}
+.bgb {
+    background: hsl(180, 66%, 49%);
+}
