@@ -4,23 +4,29 @@ import Nav from "./components/nav/Nav";
 import Article from "./components/article/Article";
 import AdvancedStatistics from "./components/advanced-statistics/Advanced-Statistics";
 import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 
 
 
 function App() {
 
-    const [ route, setRoute ]= useState(false);
+    const [ login, setLogin ] = useState(false);
+    const [ register, setRegister ] = useState(false);
 
     function switchLogin (value) {
-        setRoute(value);
-        console.log('test')
+        setLogin(value);
+    }
+
+    function switchRegister (value) {
+        setRegister(value);
     }
 
     return (
         <div>
-            {route && <Login switchLogin={switchLogin} />}
-            <Nav switchLogin={switchLogin} />
-            <Article switchLogin={switchLogin} />
+            {login && <Login switchLogin={switchLogin} />}
+            {register && <Register switchRegister={switchRegister} />}
+            <Nav switchLogin={switchLogin} switchRegister={switchRegister} />
+            <Article switchRegister={switchRegister} />
             <AdvancedStatistics />
         </div>
     );
