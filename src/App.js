@@ -25,25 +25,6 @@ function App() {
             <AdvancedStatistics />
         </div>
     );
-
-
-    // return(
-    //     <div>
-    //         <Nav />
-    //         {route === 'signin'
-    //             ? <div>
-    //                 <Article />
-    //                 <AdvancedStatistics />
-    //             </div> :(
-    //                 <div>
-    //                     <login onRoutChange={onRoutChange}/>
-    //                     <Article />
-    //                     <AdvancedStatistics />
-    //                 </div>
-    //             )
-    //         }
-    //     </div>
-    // )
 }
 
 export default App;
