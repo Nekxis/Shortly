@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Login.css"
 
-function Login (onRoutChange) {
+function Login ({switchLogin}) {
     return (
         <div className="flex justify-center bg-black/30 absolute w-full h-screen y z-50">
-            <div className="flex align-middle bg-white mt-28 w-2/5 h-3/5 max-w-sm rounded overflow-hidden shadow-lg overflow-scroll">
+            <div className="flex align-middle bg-white mt-28 w-2/5 h-3/5 max-w-sm rounded overflow-hidden shadow-lg">
                 <div className="flex items-center justify-center py-4 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-md w-full space-y-8">
                         <div>
@@ -65,7 +65,7 @@ function Login (onRoutChange) {
 
                             <div>
                                 <button
-                                    onClick={() => onRoutChange('home')}
+                                    onClick={() => switchLogin(false)}
                                     type="submit"
                                     className="group relative w-full flex justify-center py-1 px-3 border border-transparent medium-font font-medium rounded-md text-white bg-the-blue hover:bg-the-blue-focused focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-the-blue-focused"
                                 >

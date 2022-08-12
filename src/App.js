@@ -9,19 +9,18 @@ import Login from "./components/login/Login";
 
 function App() {
 
-    const [ route, setRoute ]= useState(true);
+    const [ route, setRoute ]= useState(false);
 
-    function login () {
-        if (route === true) {
-            return <Login />
-        }
+    function switchLogin (value) {
+        setRoute(value);
+        console.log('test')
     }
 
     return (
         <div>
-            {login()}
-            <Nav />
-            <Article />
+            {route && <Login switchLogin={switchLogin} />}
+            <Nav switchLogin={switchLogin} />
+            <Article switchLogin={switchLogin} />
             <AdvancedStatistics />
         </div>
     );
