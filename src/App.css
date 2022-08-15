@@ -10,12 +10,8 @@ body {
 
 .blue-button {
     display: flex;
-    align-self: center;
     justify-content: center;
-    padding: 3.5px 6px;
-    font-size: 6px;
     color: white;
     background: hsl(180, 66%, 49%);
     border: 0;
-    border-radius: 25px;
 }

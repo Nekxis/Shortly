@@ -1,20 +1,18 @@
-.nav {
-    height: 7vh;
-}
+/*.nav {*/
+/*    height: 7vh;*/
+/*}*/
 .logo {
-    width: 45px;
-    height: 12px;
+    width: 135px;
+    height: 36px;
 }
 
 .theLi {
     color: hsl(0, 0%, 55%);
     margin: 0 1vh;
-    font-size: 6px;
+
 }
 
 .log {
-    font-size: 6px;
-    padding: 3.5px 6px;
     color: hsl(0, 0%, 55%);
     font-weight: 700;
 }

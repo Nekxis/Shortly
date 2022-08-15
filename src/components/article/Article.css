@@ -3,14 +3,7 @@
     line-height: 1.2em;
 }
 .description {
-    font-size: 10px;
     font-weight: 500;
     color: hsl(0, 0%, 65%);
 }
-.get-button {
-    align-self: flex-start;
-    width: 10em;
-    padding: 1em;
-    font-size: .5em;
-    font-weight: 900;
-}
+
