@@ -4,12 +4,17 @@
 .logo {
     width: 135px;
     height: 36px;
+    cursor: pointer;
 }
 
 .theLi {
     color: hsl(0, 0%, 55%);
     margin: 0 1vh;
-
+    cursor: pointer;
+}
+.theLi:hover {
+    color: hsl(0, 0%, 40%);
+    transition: .2s;
 }
 
 .log {
