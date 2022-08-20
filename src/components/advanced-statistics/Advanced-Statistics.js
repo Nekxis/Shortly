@@ -1,10 +1,12 @@
 import React from 'react';
 import './Advanced-Statistic.css'
+import Card from "../cards/Card";
+import Separator from "../separator/Separator";
 
 function AdvancedStatistics() {
     return (
-        <div className="AdvancedStatistics flex justify-center w-full p-8 box-border">
-            <div className="input">
+        <div className="AdvancedStatistics flex flex-col justify-center h-192 w-full p-8 box-border">
+            <div className="input block">
             {/*input*/}
             {/*tablica inputu*/}
             </div>
@@ -12,7 +14,13 @@ function AdvancedStatistics() {
                 <h4 className="title-statistics text-3xl flex self-center m-0">Advanced Statistics</h4>
                 <p className="description-statistics text-xl flex self-center m-0 w-3/5 text-center leading-6">Trac how your links are performing across our advanced statistics dashboard.</p>
             </div>
-            <div className="cards"></div>
+            <div className="cards flex justify-center h-1/2 p-10">
+                <Card />
+                <Separator />
+                <Card />
+                <Separator />
+                <Card />
+            </div>
         </div>
     )
 }
