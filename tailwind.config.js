@@ -11,6 +11,7 @@ module.exports = {
         'the-blue': 'hsl(180, 66%, 49%)',
         'the-blue-hover': 'hsl(180, 66%, 30%)',
         'the-blue-focused': 'hsl(180, 66%, 40%)',
+        'the-purple': 'rgb(60, 48, 85)',
       },
       height: {
         '128': '32rem',
