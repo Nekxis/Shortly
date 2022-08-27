@@ -5,20 +5,22 @@ import Separator from "../separator/Separator";
 import Picture1 from "./theImg/icon-brand-recognition.svg"
 import Picture2 from "./theImg/icon-detailed-records.svg"
 import Picture3 from "./theImg/icon-fully-customizable.svg"
+import Api from "../api/Api";
 
 
 function AdvancedStatistics() {
     return (
-        <div className="AdvancedStatistics flex flex-col justify-center h-256 w-full p-8 box-border">
+        <div className="AdvancedStatistics relative flex flex-col justify-center px-16 py-8 h-256 w-full box-border">
+            <Api />
             <div className="input block">
             {/*input*/}
             {/*tablica inputu*/}
             </div>
-            <div className="flex justify-start  flex-col px-56 py-10">
+            <div className="flex justify-start h-1/4 flex-col px-56 py-10">
                 <h4 className="title-statistics text-3xl flex self-center m-0">Advanced Statistics</h4>
                 <p className="description-statistics text-xl leading-relaxed flex self-center m-0 w-3/5 text-center leading-6">Trac how your links are performing across our advanced statistics dashboard.</p>
             </div>
-            <div className="cards flex relative justify-center h-2/5 px-5 py-12">
+            <div className="cards flex relative justify-center h-1/2 px-5 py-12">
                 <Card
                     align={`self-start`}
                     image={Picture1}
