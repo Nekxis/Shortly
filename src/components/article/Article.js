@@ -4,7 +4,7 @@ import './Article.css'
 
 function  Article({switchRegister}) {
     return(
-        <div className="flex justify-end mt-2 mx-8 box-border mb-20 ">
+        <div className="flex justify-end mt-2 mx-8 box-border mb-28 ">
             <div className="flex flex-col p-10 w-1/2 mr-5">
                 <h1 className="title m-0 leading-relaxed text-7xl">More than just shorter links</h1>
                 <p className="description text-the-light-grey mt-2 leading-loose text-xl">Build your brand's recognition and get detailed insights on how your links are performing.</p>
