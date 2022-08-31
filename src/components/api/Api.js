@@ -3,7 +3,7 @@ import  "./Api.css";
 
 function Api (){
     return (
-        <div className={"background w-4/5 h-1/6 flex px-8 py-4 justify-around rounded-lg self-center bg-the-purple absolute -top-20"}>
+        <div className={"backgroundApi w-4/5 h-1/6 flex px-8 py-4 justify-around rounded-lg self-center bg-the-purple absolute -top-20"}>
             <input
                 name="text"
                 type="text"

@@ -6,6 +6,7 @@ import AdvancedStatistics from "./components/advanced-statistics/Advanced-Statis
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import PreFooter from "./components/pre footer/PreFooter";
+import Footer from "./components/footer/Footer";
 
 
 
@@ -29,7 +30,8 @@ function App() {
             <Nav switchLogin={switchLogin} switchRegister={switchRegister} />
             <Article switchRegister={switchRegister} />
             <AdvancedStatistics />
-            <PreFooter />
+            <PreFooter switchRegister={switchRegister} />
+            <Footer />
         </div>
     );
 }
