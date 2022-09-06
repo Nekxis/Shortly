@@ -3,7 +3,7 @@ import "./Register.css"
 
 function Register ({switchRegister}) {
     return (
-        <div className="flex justify-center bg-black/30 absolute w-full h-screen y z-50">
+        <div className="flex justify-center bg-black/30 fixed w-full h-screen y z-50">
             <div className="flex self-center justify-center bg-white w-1/3 h-128 rounded overflow-hidden shadow-lg">
                 <div className="flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-md w-full space-y-8">
