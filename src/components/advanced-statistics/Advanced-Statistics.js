@@ -8,7 +8,9 @@ import Picture3 from "./theImg/icon-fully-customizable.svg"
 import Api from "../api/Api";
 
 
+
 function AdvancedStatistics() {
+
     return (
         <div className="AdvancedStatistics relative flex flex-col justify-center px-16 py-8 h-256 w-full box-border">
             <Api />
