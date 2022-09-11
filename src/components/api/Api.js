@@ -1,26 +1,25 @@
-import React, {useState,useRef} from "react";
+import React, {useRef} from "react";
 import  "./Api.css";
 
-function Api (){
-
-  const [result, setResult] = useState(" ")
+function Api ({setArray}){
 
   const linkRef = useRef()
 
-  function submitHandler (e) {
+ async function submitHandler (e) {
     e.preventDefault();
-
-    fetch(`https://api.shrtco.de/v2/shorten?url=${linkRef.current.value}`)
-      .then(response => response.json())
-      .then(data => {
-        setResult(data.result.full_short_link2);
-      });
+   const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${linkRef.current.value}`);
+   const data = await res.json();
+   setArray((prevLinks) => {
+     const updatedLinks = [...prevLinks];
+     updatedLinks.unshift({shortedLink: data.result.short_link2, prevLink: linkRef.current.value})
+     return updatedLinks
+   })
   }
 
-  console.log(result);
-
+  // console.log(array)
     return (
-        <form onSubmit={submitHandler} className={"backgroundApi w-4/5 h-1/6 flex px-8 py-4 justify-around rounded-lg self-center bg-the-purple absolute -top-20"}>
+
+        <form onSubmit={submitHandler} className={"backgroundApi flex w-4/5 h-1/6 flex px-8 py-4 justify-around rounded-lg self-center bg-the-purple absolute -top-20"}>
             <input
                 name="text"
                 type="text"
@@ -33,6 +32,7 @@ function Api (){
                 <p className={'self-center'}>Shorten It!</p>
             </button>
         </form>
+
     )
 }
 
