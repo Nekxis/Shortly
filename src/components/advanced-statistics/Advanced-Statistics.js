@@ -14,11 +14,11 @@ function AdvancedStatistics() {
 
 
   const [array, setArray] = useState([])
-
+  console.log(array)
 
     return (
         <div className="AdvancedStatistics relative flex flex-col justify-around px-16 pb-8 pt-24 h-256 w-full box-border">
-            <Api setArray={setArray} />
+            <Api setArray={setArray} array={array} />
             <ApiOutput array={array} />
             <div className="flex justify-center h-1/4 flex-col px-56 py-10">
                 <h4 className="title-statistics text-3xl flex self-center m-0">Advanced Statistics</h4>

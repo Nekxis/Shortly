@@ -2,9 +2,8 @@ import React from "react";
 
 function ApiOutput ({array}){
 
-
   return(
-    array.map((item, i) => {
+    array.map((item) => {
       return(
         <div className={'flex w-4/5 h-16 flex px-4 py-2 justify-between rounded-lg self-center bg-white my-2'}>
           <p className={'flex self-center w-1/2'}>{item.prevLink}</p>
