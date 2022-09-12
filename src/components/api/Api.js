@@ -19,7 +19,7 @@ function Api ({setArray, array}){
   }
 
   function arrayLimit () {
-    if (array.length > 3) {
+    if (array.length > 2) {
       array.pop()
     }
   }
