@@ -17,7 +17,7 @@ function AdvancedStatistics() {
 
 
     return (
-        <div className="AdvancedStatistics relative flex flex-col justify-center px-16 pb-8 pt-24 h-256 w-full box-border">
+        <div className="AdvancedStatistics relative flex flex-col justify-around px-16 pb-8 pt-24 h-256 w-full box-border">
             <Api setArray={setArray} />
             <ApiOutput array={array} />
             <div className="flex justify-center h-1/4 flex-col px-56 py-10">
