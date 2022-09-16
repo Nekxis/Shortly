@@ -2,12 +2,13 @@ import React, {useState} from "react";
 import  "./Api.css";
 
 function Api ({setArray, array}){
-
   const [link, setLink] = useState('')
 
  async function submitHandler (e) {
     e.preventDefault();
+
     const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${link}`);
+    if (!res.ok) {return}
     const data = await res.json();
     setArray((prevLinks) => {
       const updatedLinks = [...prevLinks];
